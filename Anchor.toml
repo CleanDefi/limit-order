@@ -1,0 +1,15 @@
+[features]
+seeds = false
+
+[programs.localnet]
+limit_order = "FfBSNATbz7u8BNz3xbonCxy1NsoTxKqEnTKMsTpLXwb6"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/root/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
